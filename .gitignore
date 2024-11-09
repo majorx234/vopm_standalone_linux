@@ -1,0 +1,19 @@
+build/
+.ccls-cache/
+.projectile
+compile_commands.json
+material/
+.cache/
+
+##### Emacs
+# -*- mode: gitignore; -*-
+*~
+*.*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
