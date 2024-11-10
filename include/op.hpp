@@ -97,7 +97,7 @@ public:
   Op(int samplerate, int opmrate, GlobalStuff* glob, unsigned int (*irnd) (void));
   ~Op() {};
   void Init();
-  void Initsamplerate();
+  void initSamplerate();
   void SetFL(int n);
   void SetKC(int n);
   void SetKF(int n);

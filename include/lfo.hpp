@@ -44,18 +44,18 @@ public:
   ~Lfo() {};
 
   void Init();
-  void InitSamprate();
+  void initSamplerate();
 
   void LfoReset();
   void LfoStart();
   void SetLFRQ(int n);
   void SetPMDAMD(int n);
-  void  SetWaveForm(int n);
-  void  SetPMSAMS(int ch, int n);
+  void SetWaveForm(int n);
+  void SetPMSAMS(int ch, int n);
 
-  void  Update();
-  int  GetPmValue(int ch);
-  int  GetAmValue(int ch);
+  void Update();
+  int GetPmValue(int ch);
+  int GetAmValue(int ch);
 };
 
 #define __CLASSLFO__

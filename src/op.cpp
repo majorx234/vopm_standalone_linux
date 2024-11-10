@@ -97,7 +97,7 @@ void Op::Init() {
 
 }
 
- void Op::Initsamplerate() {
+ void Op::initSamplerate() {
   LfoPitch = CULC_DELTA_T;
 
 //2008.01.15 sam 修正OPM CLOCK可変に対応

@@ -115,7 +115,7 @@ Lfo::Lfo(int samplerate, int opmrate)
   LfoReset();
   LfoStart();
 }
- void Lfo::InitSamprate() {
+ void Lfo::initSamplerate() {
 //2008.01.15 sam 修正OPM CLOCK可変に対応
 //  LfoTimeAdd = LFOPRECISION*62500/Samprate;
   LfoTimeAdd = (LFOPRECISION/2)*opmrate/samplerate;

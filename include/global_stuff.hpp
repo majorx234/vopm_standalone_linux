@@ -23,6 +23,11 @@
 #define MAXARTIME (SIZEARTBL*(1<<MAXARTIME_BITS))
 #define ALPHAZERO (SIZEALPHATBL*3)
 
+struct XR_ELE {
+  int val_and;
+  int add;
+};
+
 struct GlobalStuff{
   int STEPTBL[11*12*64];
   int STEPTBL3[11*12*64];
@@ -34,11 +39,6 @@ struct GlobalStuff{
   int D1LTBL[16];
   int DT1TBL[128+4];
   int DT1TBL_org[128+4];
-
-  struct XR_ELE {
-    int val_and;
-    int add;
-  };
 
   XR_ELE XRTBL[64+32];
 
