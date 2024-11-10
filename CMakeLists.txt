@@ -14,6 +14,28 @@ set(VOPM_STANDALONE_SOURCES
   ${CMAKE_CURRENT_SOURCE_DIR}/src/vopm_standalone.cpp
 )
 
+set(LFO_SOURCES
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/lfo.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/lfo.cpp
+)
+
+set(OP_SOURCES
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/op.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/op.cpp
+)
+
+add_library(fm_synth_model)
+target_sources(fm_synth_model
+ PRIVATE
+ ${OP_SOURCES}
+ ${LFO_SOURCES}
+)
+target_include_directories(fm_synth_model
+ PRIVATE
+)
+target_link_libraries(fm_synth_model
+)
+
 add_executable(vopm_standalone)
 target_sources(vopm_standalone
  PRIVATE
