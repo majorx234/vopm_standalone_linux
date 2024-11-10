@@ -24,10 +24,16 @@ set(OP_SOURCES
   ${CMAKE_CURRENT_SOURCE_DIR}/src/op.cpp
 )
 
+set(OPM_SOURCES
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/opm.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/opm.cpp
+)
+
 add_library(fm_synth_model)
 target_sources(fm_synth_model
  PRIVATE
  ${OP_SOURCES}
+ ${OPM_SOURCES}
  ${LFO_SOURCES}
 )
 target_include_directories(fm_synth_model
