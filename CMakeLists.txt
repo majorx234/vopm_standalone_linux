@@ -34,6 +34,21 @@ set(VOPM_SOURCES
   ${CMAKE_CURRENT_SOURCE_DIR}/src/vopm.cpp
 )
 
+set(JACK_PROCESS_SOURCES
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/jack_process.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/jack_process.c
+)
+
+add_library(jack_process)
+target_sources(jack_process
+ PRIVATE
+ ${JACK_PROCESS_SOURCES}
+)
+target_include_directories(jack_process
+ PRIVATE
+)
+target_link_libraries(jack_process
+)
 
 add_library(fm_synth_model)
 target_sources(fm_synth_model
