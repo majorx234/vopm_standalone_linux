@@ -3,8 +3,8 @@
 #include <jack/jack.h>
 
 typedef struct JackStuff{
-  jack_port_t* out_port;
-  jack_ringbuffer_t* ringbuffer;
+  jack_port_t* out_port[2];
+  jack_ringbuffer_t* ringbuffer[2];
 } JackStuff;
 
 int process(jack_nframes_t nframes, void* jack_stuff_raw);

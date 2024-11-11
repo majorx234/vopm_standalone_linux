@@ -46,8 +46,10 @@ target_sources(jack_process
 )
 target_include_directories(jack_process
  PRIVATE
+  ${JACK_INCLUDE_DIRS}
 )
 target_link_libraries(jack_process
+ ${JACK_LIBRARIES}
 )
 
 add_library(fm_synth_model)
