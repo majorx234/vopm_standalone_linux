@@ -4,6 +4,7 @@
 
 typedef struct JackStuff{
   jack_client_t* client;
+  jack_port_t* midi_in_port;
   jack_port_t* out_port[2];
   jack_ringbuffer_t* ringbuffer[2];
 } JackStuff;
