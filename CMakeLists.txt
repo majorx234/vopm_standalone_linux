@@ -29,6 +29,12 @@ set(OPM_SOURCES
   ${CMAKE_CURRENT_SOURCE_DIR}/src/opm.cpp
 )
 
+set(OPM_DRV_SOURCES
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/opm_drv.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/opm_drv.cpp
+)
+
+
 set(VOPM_SOURCES
   ${CMAKE_CURRENT_SOURCE_DIR}/include/vopm.hpp
   ${CMAKE_CURRENT_SOURCE_DIR}/src/vopm.cpp
@@ -57,6 +63,7 @@ target_sources(fm_synth_model
  PRIVATE
  ${OP_SOURCES}
  ${OPM_SOURCES}
+ ${OPM_DRV_SOURCES}
  ${LFO_SOURCES}
 )
 target_include_directories(fm_synth_model
