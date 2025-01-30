@@ -6,3 +6,6 @@
 - maybe later implement an lv2 or Clap plugin
 - make everything open source and buildable on free open source environments
 
+# References
+- newer version of source code:
+  - http://picopicose.com/software.html
